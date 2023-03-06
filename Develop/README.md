@@ -1,8 +1,9 @@
-# <TITLE>
+# <title>
+https://img.shields.io/badge/License-MIT License-blue
 
 ## Description
         
-This is my description
+descr
        
         
 ## Table of Contents (Optional)
@@ -18,26 +19,27 @@ If your README is long, add a table of contents to make it easy for users to fin
         
 ## Installation
         
-This is the install instructions
+instal
         
 ## Usage
         
-Here is the usage info
+use
        
 ## License
         
-MIT License
+This application license is: MIT License
+
         
 ##Contribution
         
-This is how you can contribute
+contr
         
 ## Tests
         
-This is the test are
+test
 
 ## Questions
 
-My GitHub is This is my github
-If you have any questions, please contact me on my email at this is my email. I will reach back to you as soon as possible
+My GitHub is git
+If you have any questions, please contact me on my email at email. I will reach back to you as soon as possible
         

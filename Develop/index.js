@@ -31,7 +31,7 @@ const questions = [
   },
   {
     type: "input",
-    message: " What are the test instructions?",
+    message: "What are the test instructions?",
     name: "test",
   },
   {
@@ -70,7 +70,7 @@ function init() {
       }) => {
         // Create Readme Text
         ReadmeText = `# <${title}>
-https://img.shields.io/badge/License-${license}-blue
+https://img.shields.io/badge/${license}-blue
 
 ## Description
         
