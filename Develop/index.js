@@ -54,30 +54,72 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt(questions).then(({ name, location, gitHub, linkedIn }) => {
-    htmlText = `<!DOCTYPE html>
-       <html lang="en">
-       <head>
-           <meta charset="UTF-8">
-           <meta http-equiv="X-UA-Compatible" content="IE=edge">
-           <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <title>header</title>
-       </head>
-       <body>
-       <h1>Hello. My name is ${name} </h1>
-       <p> I live in the state of ${location}</p>
-       <p>My LinkedIn is ${linkedIn}</p>
-       <p>My GitHub is ${gitHub}</p>
-       </body>
-       </html>`;
-    fs.writeFile("index-test.html", htmlText, (err) =>
-      err ? console.log(err) : console.log("success")
+  inquirer
+    .prompt(questions)
+    .then(
+      ({
+        title,
+        description,
+        infomation,
+        instructions,
+        guidelines,
+        test,
+        license,
+        github,
+        email,
+      }) => {
+        htmlText = `# <${title}>
+
+        ## Description
+        
+        ${description}
+       
+        
+        ## Table of Contents (Optional)
+        
+        If your README is long, add a table of contents to make it easy for users to find what they need.
+        
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [License](#license)
+        -[Contribution](#contribution)
+        -[Tests](#test)
+        -[Questions](#questions)
+        
+        ## Installation
+        
+        ${instructions}
+        
+        ## Usage
+        
+       ${infomation}
+       
+        ## License
+        
+        ${license}
+        
+        ##Contribution
+        
+        ${guidelines}
+        
+        ## Tests
+        
+        ${test}
+
+        ## Questions
+
+        My GitHub is ${github}
+        If you have any questions, please contact me on my email at ${email}. I will reach back to you as soon as possible
+        `;
+        fs.writeFile("README.md", htmlText, (err) =>
+          err ? console.log(err) : console.log("success")
+        );
+      }
     );
-  });
 }
 
 // Function call to initialize app
