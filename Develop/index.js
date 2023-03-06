@@ -1,8 +1,8 @@
-// TODO: Include packages needed for this application
+//  Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
 
-// TODO: Create an array of questions for user input
+//  Create an array of questions for user input
 const questions = [
   {
     type: "input",
@@ -52,7 +52,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to initialize app
+//  Create a function to initialize app
 function init() {
   inquirer
     .prompt(questions)
@@ -68,7 +68,9 @@ function init() {
         github,
         email,
       }) => {
+        // Create Readme Text
         ReadmeText = `# <${title}>
+https://img.shields.io/badge/License-${license}-blue
 
 ## Description
         
@@ -96,7 +98,8 @@ ${infomation}
        
 ## License
         
-${license}
+This application license is: ${license}
+
         
 ##Contribution
         
@@ -111,6 +114,7 @@ ${test}
 My GitHub is ${github}
 If you have any questions, please contact me on my email at ${email}. I will reach back to you as soon as possible
         `;
+        // Write Readme file
         fs.writeFile("README.md", ReadmeText, (err) =>
           err ? console.log(err) : console.log("success")
         );
