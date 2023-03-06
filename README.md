@@ -1,13 +1,8 @@
-# <Your-Project-Title>
+# <Readme-Maker>
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This application was built for the purposes of creating a readme generator. This generator can allow you to create a quick and simple readme file by answering some prompts in the terminal. The application was created by using node.js, file system, and inquirer. The reason why I did this application was so I can have a method to create a readme file that was easy to do, quick, and mostly automated. I learned how to use node.js and third party libraries such as inquirer and file systme to create a prompt based application and using the prompts to write files based on the responses.
 
 ## Table of Contents (Optional)
 
@@ -20,46 +15,20 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+To install this application, you need clone the repository. To clone the repository, you go to the green button on the repository that says "< > Code". Then you can choose to copy either the https url or the ssh url if you have a ssh key. After you copy the link, then you go to your terminal on your computer and in the terminal, you change the current directory to the directory you want to place the cloned repository in and then you type "git clone" and paste the url. Finally, you hit enter and the repository will be on your machine.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Since this is a terminal based application, there is not much in terms of how to use it. All you need to do is open the terminal in your code editor or machine and go to the index.js in the folder. Then type "node index" to start the prompts. You will see questions which you will have to type the responses for in the terminal and also there is a choices question for selecting the license you want to have in the README so you have to go to the answer you want via the up and down keys and hit the spacebar to select. Then hit the "enter" key to confirm your choice. After you answered all the questions, a "success" text line will appear to show that you have made the README. So take the README file and paste it into your own application for your use.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![Tutorial Video](Untitled_%20Mar%206%2C%202023%2012_21%20AM.webm)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+Inquirer- https://www.npmjs.com/package/inquirer
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+File System -https://nodejs.org/api/fs.html
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-Badges aren't necessary, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute to it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+MIT

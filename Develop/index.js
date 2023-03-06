@@ -21,7 +21,7 @@ const questions = [
   },
   {
     type: "input",
-    message: "What is the usage infomation",
+    message: "What is the usage infomation?",
     name: "infomation",
   },
   {
@@ -35,11 +35,10 @@ const questions = [
     name: "test",
   },
   {
+    name: "license",
     type: "checkbox",
     message: "What license do you want?",
-    choices: "MIT",
-    choices: "None",
-    name: "license",
+    choices: ["MIT License", "none"],
   },
   {
     type: "input",
@@ -52,9 +51,6 @@ const questions = [
     name: "email",
   },
 ];
-
-// TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
@@ -72,50 +68,50 @@ function init() {
         github,
         email,
       }) => {
-        htmlText = `# <${title}>
+        ReadmeText = `# <${title}>
 
-        ## Description
+## Description
         
-        ${description}
+${description}
        
         
-        ## Table of Contents (Optional)
+## Table of Contents (Optional)
         
-        If your README is long, add a table of contents to make it easy for users to find what they need.
+If your README is long, add a table of contents to make it easy for users to find what they need.
         
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [License](#license)
-        -[Contribution](#contribution)
-        -[Tests](#test)
-        -[Questions](#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+-[Contribution](#contribution)
+-[Tests](#test)
+-[Questions](#questions)
         
-        ## Installation
+## Installation
         
-        ${instructions}
+${instructions}
         
-        ## Usage
+## Usage
         
-       ${infomation}
+${infomation}
        
-        ## License
+## License
         
-        ${license}
+${license}
         
-        ##Contribution
+##Contribution
         
-        ${guidelines}
+${guidelines}
         
-        ## Tests
+## Tests
         
-        ${test}
+${test}
 
-        ## Questions
+## Questions
 
-        My GitHub is ${github}
-        If you have any questions, please contact me on my email at ${email}. I will reach back to you as soon as possible
+My GitHub is ${github}
+If you have any questions, please contact me on my email at ${email}. I will reach back to you as soon as possible
         `;
-        fs.writeFile("README.md", htmlText, (err) =>
+        fs.writeFile("README.md", ReadmeText, (err) =>
           err ? console.log(err) : console.log("success")
         );
       }
