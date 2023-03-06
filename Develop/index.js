@@ -70,23 +70,24 @@ function init() {
       }) => {
         // Create Readme Text
         ReadmeText = `# <${title}>
-https://img.shields.io/badge/${license}-blue
+![badmath] https://img.shields.io/badge/${license}-blue
 
 ## Description
         
 ${description}
        
         
-## Table of Contents (Optional)
+## Table of Contents 
         
 If your README is long, add a table of contents to make it easy for users to find what they need.
         
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
--[Contribution](#contribution)
--[Tests](#test)
--[Questions](#questions)
+- [Contribution](#contribution)
+- [Tests](#test)
+- [Questions](#questions)
+
         
 ## Installation
         
