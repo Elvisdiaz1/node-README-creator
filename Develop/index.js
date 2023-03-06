@@ -57,7 +57,28 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  inquirer.prompt(questions).then(({ name, location, gitHub, linkedIn }) => {
+    htmlText = `<!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>header</title>
+       </head>
+       <body>
+       <h1>Hello. My name is ${name} </h1>
+       <p> I live in the state of ${location}</p>
+       <p>My LinkedIn is ${linkedIn}</p>
+       <p>My GitHub is ${gitHub}</p>
+       </body>
+       </html>`;
+    fs.writeFile("index-test.html", htmlText, (err) =>
+      err ? console.log(err) : console.log("success")
+    );
+  });
+}
 
 // Function call to initialize app
 init();
