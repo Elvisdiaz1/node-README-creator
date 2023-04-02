@@ -85,7 +85,7 @@ If your README is long, add a table of contents to make it easy for users to fin
 - [Usage](#usage)
 - [License](#license)
 - [Contribution](#contribution)
-- [Tests](#test)
+- [Tests](#tests)
 - [Questions](#questions)
 
         
@@ -102,7 +102,7 @@ ${infomation}
 This application license is: ${license}
 
         
-##Contribution
+## Contribution
         
 ${guidelines}
         
