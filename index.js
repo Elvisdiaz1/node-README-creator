@@ -116,7 +116,7 @@ My GitHub is ${github}
 If you have any questions, please contact me on my email at ${email}. I will reach back to you as soon as possible
         `;
         // Write Readme file
-        fs.writeFile("README.md", ReadmeText, (err) =>
+        fs.writeFile("READMEcopy.md", ReadmeText, (err) =>
           err ? console.log(err) : console.log("success")
         );
       }
