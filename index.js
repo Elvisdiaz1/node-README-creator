@@ -69,8 +69,8 @@ function init() {
         email,
       }) => {
         // Create Readme Text
-        ReadmeText = `# <${title}>
-![badmath] https://img.shields.io/badge/${license}-blue
+        ReadmeText = `# ${title}
+[![License: ${license}](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})
 
 ## Description
         
